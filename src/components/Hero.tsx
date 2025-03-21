@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = "I build pixel-perfect, interactive websites that run blazingly fast.";
+  const fullText = "Developing fast, secure websites and applications with a cybersecurity mindset.";
   
   useEffect(() => {
     let i = 0;
@@ -49,13 +49,13 @@ const Hero: React.FC = () => {
       <div className="text-center max-w-3xl">
         <div className="mb-6">
           <Avatar className="w-24 h-24 mx-auto border-2 border-primary pixel-corners">
-            <AvatarImage src="/placeholder.svg" alt="Profile" />
-            <AvatarFallback>JD</AvatarFallback>
+            <AvatarImage src="/public/ProfilePIC.JPG" alt="Profile" />
+            <AvatarFallback>ND</AvatarFallback>
           </Avatar>
         </div>
         
         <h1 className="font-pixel text-2xl md:text-3xl lg:text-4xl mb-4 text-primary">
-          John Doe
+          Nabajit Das
           <span className="text-pixel-green">.</span>
         </h1>
         
