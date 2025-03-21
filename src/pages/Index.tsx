@@ -29,11 +29,21 @@ const Index = () => {
 
   return (
     <Layout>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </Layout>
   );
 };
