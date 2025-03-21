@@ -1,9 +1,13 @@
 
 import React from 'react';
 
-const PixelAvatar: React.FC = () => {
+interface PixelAvatarProps {
+  className?: string;
+}
+
+const PixelAvatar: React.FC<PixelAvatarProps> = ({ className = "" }) => {
   return (
-    <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto">
+    <div className={`relative w-32 h-32 md:w-40 md:h-40 mx-auto ${className}`}>
       <div className="absolute inset-0 bg-pixel-blue animate-pulse-pixel" style={{ 
         clipPath: `polygon(
           /* Head */
