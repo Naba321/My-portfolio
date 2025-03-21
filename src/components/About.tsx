@@ -27,8 +27,8 @@ const About: React.FC = () => {
             <div className="pixel-card p-6">
               <h3 className="font-pixel text-xl mb-4 text-primary">Background</h3>
               <p className="font-mono text-sm leading-relaxed mb-4">
-                I'm a passionate software engineer with 5 years of experience building web applications. 
-                I focus on creating clean, efficient, and scalable solutions that provide excellent user experiences.
+              I'm a passionate web developer dedicated to building fast, secure, and user-friendly websites. 
+              I focus on creating clean, efficient, and scalable solutions that deliver great user experiences.
               </p>
               <p className="font-mono text-sm leading-relaxed">
                 My approach combines technical expertise with creative problem-solving, always keeping the end user in mind. 
@@ -40,8 +40,8 @@ const About: React.FC = () => {
               <h3 className="font-pixel text-xl mb-4 text-primary">Education</h3>
               <div className="space-y-4">
                 <div>
-                  <div className="font-pixel text-sm">BS Computer Science</div>
-                  <div className="font-mono text-xs text-muted-foreground">Tech University • 2015 - 2019</div>
+                  <div className="font-pixel text-sm">B.Tech Computer Science</div>
+                  <div className="font-mono text-xs text-muted-foreground">Central Institute of Technology Kokrajhar • 2021 - 2025</div>
                 </div>
                 <div>
                   <div className="font-pixel text-sm">Frontend Development Certification</div>
