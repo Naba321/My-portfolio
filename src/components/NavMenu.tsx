@@ -32,7 +32,7 @@ const NavMenu: React.FC = () => {
 
       {/* Desktop Menu */}
       <nav className="hidden lg:flex space-x-1">
-        {['about', 'projects', 'contact'].map((item) => (
+        {['home', 'about', 'projects', 'experience', 'contact'].map((item) => (
           <button
             key={item}
             onClick={() => scrollToSection(item)}
@@ -47,7 +47,7 @@ const NavMenu: React.FC = () => {
       {isOpen && (
         <div className="lg:hidden absolute top-12 right-0 w-48 bg-card border border-border pixel-corners shadow-lg animate-pixel-fade-in">
           <div className="py-2">
-            {['about', 'projects', 'contact'].map((item) => (
+            {['home', 'about', 'projects', 'experience', 'contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
