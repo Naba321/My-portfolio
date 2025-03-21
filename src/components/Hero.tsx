@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import PixelAvatar from './PixelAvatar';
 import { ChevronDown } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
@@ -46,6 +47,13 @@ const Hero: React.FC = () => {
       </div>
       
       <div className="text-center max-w-3xl">
+        <div className="mb-6">
+          <Avatar className="w-24 h-24 mx-auto border-2 border-primary pixel-corners">
+            <AvatarImage src="/placeholder.svg" alt="Profile" />
+            <AvatarFallback>JD</AvatarFallback>
+          </Avatar>
+        </div>
+        
         <h1 className="font-pixel text-2xl md:text-3xl lg:text-4xl mb-4 text-primary">
           John Doe
           <span className="text-pixel-green">.</span>
