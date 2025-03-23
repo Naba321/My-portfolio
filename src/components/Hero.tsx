@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
           </button>
           
           <a 
-            href="/cv.pdf" 
+            href="/public/My_resume.pdf" 
             download
             className="font-pixel text-sm px-6 py-3 bg-pixel-purple text-white hover:bg-pixel-green inline-flex items-center transition-colors duration-300 pixel-corners"
           >

@@ -5,11 +5,12 @@ import { Progress } from './ui/progress';
 
 const About: React.FC = () => {
   const skills = [
-    { icon: 'react', name: 'React', level: 90 },
-    { icon: 'typescript', name: 'TypeScript', level: 85 },
+    { icon: 'react', name: 'React', level: 80 },
+    { icon: 'typescript', name: 'TypeScript', level: 65 },
     { icon: 'node', name: 'Node.js', level: 80 },
     { icon: 'database', name: 'Databases', level: 75 },
-    { icon: 'cloud', name: 'Cloud', level: 70 }
+    { icon: 'cloud', name: 'Cloud', level: 70 },
+    { icon: 'cloud', name: 'CyberSecurity', level: 50 },
   ] as const;
 
   return (
@@ -41,15 +42,15 @@ const About: React.FC = () => {
               <div className="space-y-4">
                 <div>
                   <div className="font-pixel text-sm">B.Tech Computer Science</div>
-                  <div className="font-mono text-xs text-muted-foreground">Central Institute of Technology Kokrajhar • 2021 - 2025</div>
+                  <div className="font-mono text-xs text-muted-foreground">CIT Kokrajhar • 2021 - 2025</div>
                 </div>
                 <div>
                   <div className="font-pixel text-sm">Frontend Development Certification</div>
-                  <div className="font-mono text-xs text-muted-foreground">Online Academy • 2020</div>
+                  <div className="font-mono text-xs text-muted-foreground">Online Academy • 2023</div>
                 </div>
                 <div>
                   <div className="font-pixel text-sm">Cloud Architecture</div>
-                  <div className="font-mono text-xs text-muted-foreground">Cloud Provider Certification • 2021</div>
+                  <div className="font-mono text-xs text-muted-foreground">Cloud Provider Certification • 2022</div>
                 </div>
               </div>
             </div>
@@ -75,19 +76,19 @@ const About: React.FC = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="pixel-card p-4 flex flex-col items-center justify-center opacity-0 animate-pixel-slide-up" style={{animationDelay: '0.3s'}}>
-              <div className="font-pixel text-3xl text-primary mb-2">5+</div>
+              <div className="font-pixel text-3xl text-primary mb-2">1+</div>
               <div className="font-mono text-xs text-center">Years Experience</div>
             </div>
             <div className="pixel-card p-4 flex flex-col items-center justify-center opacity-0 animate-pixel-slide-up" style={{animationDelay: '0.4s'}}>
-              <div className="font-pixel text-3xl text-primary mb-2">50+</div>
+              <div className="font-pixel text-3xl text-primary mb-2">5+</div>
               <div className="font-mono text-xs text-center">Projects Completed</div>
             </div>
             <div className="pixel-card p-4 flex flex-col items-center justify-center opacity-0 animate-pixel-slide-up" style={{animationDelay: '0.5s'}}>
-              <div className="font-pixel text-3xl text-primary mb-2">30+</div>
+              <div className="font-pixel text-3xl text-primary mb-2">3+</div>
               <div className="font-mono text-xs text-center">Happy Clients</div>
             </div>
             <div className="pixel-card p-4 flex flex-col items-center justify-center opacity-0 animate-pixel-slide-up" style={{animationDelay: '0.6s'}}>
-              <div className="font-pixel text-3xl text-primary mb-2">10+</div>
+              <div className="font-pixel text-3xl text-primary mb-2">5+</div>
               <div className="font-mono text-xs text-center">Technologies</div>
             </div>
           </div>
