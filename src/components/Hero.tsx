@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import PixelAvatar from './PixelAvatar';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Download } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Hero: React.FC = () => {
@@ -93,6 +93,15 @@ const Hero: React.FC = () => {
           >
             SEE MY WORK
           </button>
+          
+          <a 
+            href="/cv.pdf" 
+            download
+            className="font-pixel text-sm px-6 py-3 bg-pixel-purple text-white hover:bg-pixel-green inline-flex items-center transition-colors duration-300 pixel-corners"
+          >
+            <Download className="mr-2 h-4 w-4" />
+            DOWNLOAD CV
+          </a>
         </div>
       </div>
       
