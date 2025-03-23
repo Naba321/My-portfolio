@@ -2,7 +2,7 @@
 import React from 'react';
 
 interface PixelIconProps {
-  name: 'react' | 'node' | 'typescript' | 'database' | 'cloud';
+  name: 'react' | 'node' | 'typescript' | 'database' | 'cloud' | 'cybersecurity';
   className?: string;
 }
 
@@ -37,6 +37,12 @@ const PixelIcon: React.FC<PixelIconProps> = ({ name, className = '' }) => {
     cloud: `polygon(
       /* Cloud shape */
       8px 12px, 12px 12px, 12px 8px, 20px 8px, 20px 12px, 24px 12px, 24px 16px, 28px 16px, 28px 20px, 24px 20px, 24px 24px, 8px 24px, 8px 20px, 4px 20px, 4px 16px, 8px 16px, 8px 12px
+    )`,
+    cybersecurity: `polygon(
+      /* Shield Outer Shape */
+      8px 4px, 24px 4px, 24px 12px, 28px 12px, 28px 20px, 16px 28px, 4px 20px, 4px 12px, 8px 12px, 8px 4px,
+      /* Keyhole */
+      14px 14px, 18px 14px, 18px 18px, 16px 21px, 14px 18px, 14px 14px
     )`
   };
 
@@ -47,6 +53,7 @@ const PixelIcon: React.FC<PixelIconProps> = ({ name, className = '' }) => {
       case 'typescript': return 'bg-pixel-blue';
       case 'database': return 'bg-pixel-purple';
       case 'cloud': return 'bg-pixel-yellow';
+      case 'cybersecurity': return 'bg-pixel-red';
       default: return 'bg-pixel-blue';
     }
   };

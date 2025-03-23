@@ -10,7 +10,7 @@ const About: React.FC = () => {
     { icon: 'node', name: 'Node.js', level: 80 },
     { icon: 'database', name: 'Databases', level: 75 },
     { icon: 'cloud', name: 'Cloud', level: 70 },
-    { icon: 'cloud', name: 'CyberSecurity', level: 50 },
+    { icon: 'cybersecurity', name: 'CyberSecurity', level: 70 },
   ] as const;
 
   return (
