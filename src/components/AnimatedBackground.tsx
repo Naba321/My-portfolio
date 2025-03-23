@@ -20,58 +20,76 @@ const AnimatedBackground: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) =>
     setCanvasDimensions();
     window.addEventListener('resize', setCanvasDimensions);
     
-    // Particle configuration
-    const particlesArray: Particle[] = [];
-    const numberOfParticles = Math.floor(window.innerWidth / 20);
-    const colors = theme === 'dark' 
-      ? ['#3a3a3a', '#4a4a4a', '#2a2a2a', '#5a5a5a'] 
-      : ['#f0f0f0', '#e0e0e0', '#d0d0d0', '#ffffff'];
+    // Code-like elements configuration
+    const codeElements: CodeElement[] = [];
+    const numberOfElements = Math.floor(window.innerWidth / 15);
     
-    // Particle class
-    class Particle {
+    // Colors based on theme
+    const colors = theme === 'dark' 
+      ? ['#00FF00', '#0088FF', '#8800FF', '#00CCFF', '#FFCC00'] // Vibrant colors for dark theme
+      : ['#0066CC', '#009966', '#663399', '#006633', '#336699']; // Subdued colors for light theme
+    
+    // Code symbols to display
+    const codeSymbols = [
+      '{', '}', '(', ')', '[', ']', ';', '=', '+', '-', '*', '/', '<', '>', 
+      '==', '===', '!=', '!==', '=>', '&&', '||', '?', ':', '...'
+    ];
+    
+    // Code words to display
+    const codeWords = [
+      'function', 'const', 'let', 'var', 'return', 'if', 'else', 'for', 'while',
+      'class', 'import', 'export', 'from', 'async', 'await', 'try', 'catch',
+      'React', 'useState', 'useEffect', 'props', 'component', 'render',
+      'dev', 'code', 'api', 'data', 'build', 'deploy', 'test', 'debug'
+    ];
+    
+    // CodeElement class
+    class CodeElement {
       x: number;
       y: number;
       size: number;
-      speedX: number;
-      speedY: number;
+      speed: number;
+      text: string;
       color: string;
+      opacity: number;
       
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 5 + 1;
-        this.speedX = Math.random() * 0.2 - 0.1;
-        this.speedY = Math.random() * 0.2 - 0.1;
+        this.size = Math.random() * 12 + 8; // Font size between 8 and 20
+        this.speed = Math.random() * 0.5 + 0.1;
+        // Decide whether to use a symbol or a word (70% chance for word)
+        this.text = Math.random() > 0.3 
+          ? codeWords[Math.floor(Math.random() * codeWords.length)] 
+          : codeSymbols[Math.floor(Math.random() * codeSymbols.length)];
         this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.opacity = Math.random() * 0.5 + 0.1; // Random opacity between 0.1 and 0.6
       }
       
       update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
+        this.y += this.speed;
         
-        // Bounce off edges
-        if (this.x > canvas.width || this.x < 0) {
-          this.speedX = -this.speedX;
-        }
-        
-        if (this.y > canvas.height || this.y < 0) {
-          this.speedY = -this.speedY;
+        // Reset position when off screen
+        if (this.y > canvas.height) {
+          this.y = -this.size * 2;
+          this.x = Math.random() * canvas.width;
         }
       }
       
       draw() {
         if (!ctx) return;
+        ctx.font = `${this.size}px "JetBrains Mono", monospace`;
         ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.rect(this.x, this.y, this.size, this.size);
-        ctx.fill();
+        ctx.globalAlpha = this.opacity;
+        ctx.fillText(this.text, this.x, this.y);
+        ctx.globalAlpha = 1;
       }
     }
     
-    // Create particles
+    // Create code elements
     const init = () => {
-      for (let i = 0; i < numberOfParticles; i++) {
-        particlesArray.push(new Particle());
+      for (let i = 0; i < numberOfElements; i++) {
+        codeElements.push(new CodeElement());
       }
     };
     
@@ -79,36 +97,25 @@ const AnimatedBackground: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) =>
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-      for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update();
-        particlesArray[i].draw();
-      }
-      
-      // Draw connections
-      connect();
-      requestAnimationFrame(animate);
-    };
-    
-    // Draw connections between particles
-    const connect = () => {
-      for (let a = 0; a < particlesArray.length; a++) {
-        for (let b = a; b < particlesArray.length; b++) {
-          const dx = particlesArray[a].x - particlesArray[b].x;
-          const dy = particlesArray[a].y - particlesArray[b].y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          
-          if (distance < 100) {
-            ctx.strokeStyle = theme === 'dark' 
-              ? `rgba(200, 200, 220, ${0.1 - distance/1000})` 
-              : `rgba(100, 100, 120, ${0.1 - distance/1000})`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-            ctx.stroke();
+      // Draw binary rain effect (0s and 1s in the background)
+      ctx.font = '8px "JetBrains Mono", monospace';
+      ctx.fillStyle = theme === 'dark' ? 'rgba(0, 255, 0, 0.05)' : 'rgba(0, 100, 0, 0.03)';
+      for (let i = 0; i < canvas.width / 10; i++) {
+        for (let j = 0; j < canvas.height / 10; j++) {
+          if (Math.random() > 0.97) { // Only draw some 0s and 1s sparsely
+            const binary = Math.random() > 0.5 ? '0' : '1';
+            ctx.fillText(binary, i * 10, j * 10);
           }
         }
       }
+      
+      // Draw and update code elements
+      for (let i = 0; i < codeElements.length; i++) {
+        codeElements[i].update();
+        codeElements[i].draw();
+      }
+      
+      requestAnimationFrame(animate);
     };
     
     init();
@@ -123,7 +130,8 @@ const AnimatedBackground: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) =>
     <canvas 
       ref={canvasRef}
       className="fixed inset-0 -z-10 pointer-events-none"
-      style={{ opacity: 0.4 }}
+      aria-hidden="true"
+      style={{ opacity: 0.7 }}
     />
   );
 };
