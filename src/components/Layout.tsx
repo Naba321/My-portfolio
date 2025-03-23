@@ -60,17 +60,17 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="container flex justify-between items-center h-16 px-4">
           <div className="flex items-center gap-3">
-            <Avatar className="h-10 w-10 border-2 border-primary pixel-corners overflow-hidden">
+            {/* <Avatar className="h-10 w-10 border-2 border-primary pixel-corners overflow-hidden">
               <AvatarImage src="/placeholder.svg" alt="Profile" className="pixel-image" />
               <AvatarFallback>
                 <PixelAvatar className="scale-75" />
               </AvatarFallback>
-            </Avatar>
+            </Avatar> */}
             <button 
               onClick={() => navigate('/')} 
               className="font-pixel text-primary text-lg tracking-tight hover:text-pixel-green transition-colors"
             >
-              DEV_PORTFOLIO
+              NABAJIT DAS
             </button>
           </div>
           <div className="flex items-center gap-4">

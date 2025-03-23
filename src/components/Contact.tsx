@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                   <div>
                     <div className="font-pixel text-sm mb-1">Email</div>
                     <a href="mailto:hello@johndoe.dev" className="font-mono text-sm text-muted-foreground hover:text-primary">
-                      hello@johndoe.dev
+                      nabajitdas438@gmail.com
                     </a>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                   <div>
                     <div className="font-pixel text-sm mb-1">Location</div>
                     <div className="font-mono text-sm text-muted-foreground">
-                      San Francisco, California, USA
+                      Tamulpur, Assam, IND
                     </div>
                   </div>
                 </div>
@@ -78,14 +78,14 @@ const Contact: React.FC = () => {
                   <div className="font-pixel text-sm mb-4">Social Profiles</div>
                   <div className="flex space-x-4">
                     <a 
-                      href="#" 
+                      href="https://github.com/Naba321" 
                       className="bg-secondary p-2 pixel-corners hover:bg-primary hover:text-primary-foreground transition-colors"
                       aria-label="GitHub Profile"
                     >
                       <Github className="h-5 w-5" />
                     </a>
                     <a 
-                      href="#" 
+                      href="https://www.linkedin.com/in/nabajit-das-697698228/" 
                       className="bg-secondary p-2 pixel-corners hover:bg-primary hover:text-primary-foreground transition-colors"
                       aria-label="LinkedIn Profile"
                     >
