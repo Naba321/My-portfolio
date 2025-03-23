@@ -5,6 +5,7 @@ import NavMenu from './NavMenu';
 import ThemeToggle from './ThemeToggle';
 import PixelAvatar from './PixelAvatar';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import AnimatedBackground from './AnimatedBackground';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -54,6 +55,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <AnimatedBackground theme={theme} />
+      
       <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="container flex justify-between items-center h-16 px-4">
           <div className="flex items-center gap-3">
