@@ -45,12 +45,12 @@ const About: React.FC = () => {
                   <div className="font-mono text-xs text-muted-foreground">CIT Kokrajhar • 2021 - 2025</div>
                 </div>
                 <div>
-                  <div className="font-pixel text-sm">Frontend Development Certification</div>
-                  <div className="font-mono text-xs text-muted-foreground">Online Academy • 2023</div>
+                  <div className="font-pixel text-sm">Advanced Diploma in IT PLUS</div>
+                  <div className="font-mono text-xs text-muted-foreground"> NBCE • 2023</div>
                 </div>
                 <div>
-                  <div className="font-pixel text-sm">Cloud Architecture</div>
-                  <div className="font-mono text-xs text-muted-foreground">Cloud Provider Certification • 2022</div>
+                  <div className="font-pixel text-sm">Web Penetration Testing Certification</div>
+                  <div className="font-mono text-xs text-muted-foreground">AXOMsec • 2022</div>
                 </div>
               </div>
             </div>

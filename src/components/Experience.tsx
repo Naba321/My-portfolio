@@ -5,25 +5,25 @@ import { Badge } from './ui/badge';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      position: "Senior Frontend Developer",
-      company: "Tech Solutions Inc.",
-      period: "2021 - Present",
-      description: "Leading a team of 5 developers, architecting and implementing user interfaces for enterprise applications.",
-      technologies: ["React", "TypeScript", "Next.js", "GraphQL"]
+      position: "Web Development Intern",
+      company: "Assam Power Distribution Company Ltd",
+      period: "06-2024 - 07-2024",
+      description: "Developed and enhanced features for the Electricity Bill Management System. Assisted in both front-end and back-end tasks.",
+      technologies: ["HTML/CSS", "JavaScript", "Python", " Django"]
     },
     {
-      position: "Full Stack Developer",
-      company: "Digital Agency",
-      period: "2019 - 2021",
-      description: "Developed and maintained web applications for clients across various industries, with a focus on user experience and performance.",
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS"]
+      position: "Web & Management Convenor",
+      company: "Cyber Security Club, CITK",
+      period: "08-2023 – Present",
+      description: "Managed web development and cybersecurity events for the club.",
+      technologies: ["CyberSecurity", "Networking"]
     },
     {
-      position: "Junior Web Developer",
-      company: "StartupXYZ",
-      period: "2017 - 2019",
-      description: "Created responsive user interfaces and collaborated with the design team to implement pixel-perfect layouts.",
-      technologies: ["HTML/CSS", "JavaScript", "Vue.js", "Firebase"]
+      position: "Cyber Security Training",
+      company: "NIELIT Guwahati",
+      period: "02-2023 - 04-2023",
+      description: "Completed Cyber Security Training from NIELIT Guwahati, learning penetration testing, vulnerability assessment, and ethical hacking.",
+      technologies: ["Linux", "Nmap", "Wireshark", "Windows Security", "VirtualBox", "Python"]
     }
   ];
 
