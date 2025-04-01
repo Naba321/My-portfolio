@@ -32,7 +32,7 @@ const NavMenu: React.FC = () => {
 
       {/* Desktop Menu */}
       <nav className="hidden lg:flex space-x-1">
-        {['home', 'about', 'projects', 'experience', 'contact'].map((item) => (
+        {['home', 'about', 'experience', 'projects', 'contact'].map((item) => (
           <button
             key={item}
             onClick={() => scrollToSection(item)}
