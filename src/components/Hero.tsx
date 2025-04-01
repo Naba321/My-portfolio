@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = "Developing fast, secure websites and applications with a cybersecurity mindset.";
+  const fullText = "Deeveloping fast, secure websites and applications with a cybersecurity mindset.";
   
   useEffect(() => {
     let i = 0;
