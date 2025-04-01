@@ -5,12 +5,12 @@ import { Progress } from './ui/progress';
 
 const About: React.FC = () => {
   const skills = [
-    { icon: 'react', name: 'React', level: 80 },
-    { icon: 'typescript', name: 'TypeScript', level: 65 },
+    { icon: 'react', name: 'React', level: 60 },
+    { icon: 'typescript', name: 'TypeScript', level: 50 },
     { icon: 'node', name: 'Node.js', level: 80 },
-    { icon: 'database', name: 'Databases', level: 75 },
-    { icon: 'cloud', name: 'Cloud', level: 70 },
-    { icon: 'cybersecurity', name: 'CyberSecurity', level: 70 },
+    { icon: 'database', name: 'Databases', level: 70 },
+    { icon: 'cloud', name: 'Cloud', level: 50 },
+    { icon: 'cybersecurity', name: 'CyberSecurity', level: 60 },
   ] as const;
 
   return (
@@ -84,11 +84,11 @@ const About: React.FC = () => {
               <div className="font-mono text-xs text-center">Projects Completed</div>
             </div>
             <div className="pixel-card p-4 flex flex-col items-center justify-center opacity-0 animate-pixel-slide-up" style={{animationDelay: '0.5s'}}>
-              <div className="font-pixel text-3xl text-primary mb-2">3+</div>
+              <div className="font-pixel text-3xl text-primary mb-2">2+</div>
               <div className="font-mono text-xs text-center">Happy Clients</div>
             </div>
             <div className="pixel-card p-4 flex flex-col items-center justify-center opacity-0 animate-pixel-slide-up" style={{animationDelay: '0.6s'}}>
-              <div className="font-pixel text-3xl text-primary mb-2">5+</div>
+              <div className="font-pixel text-3xl text-primary mb-2">4+</div>
               <div className="font-mono text-xs text-center">Technologies</div>
             </div>
           </div>
