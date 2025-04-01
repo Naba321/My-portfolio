@@ -36,7 +36,7 @@ const NavMenu: React.FC = () => {
           <button
             key={item}
             onClick={() => scrollToSection(item)}
-            className="pixel-btn pixel-corners uppercase hover:bg-primary hover:text-primary-foreground"
+            className="pixel-btn pixel-corners uppercase hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             {item}
           </button>
