@@ -6,37 +6,37 @@ const Projects: React.FC = () => {
   const projects = [
     {
       title: "Ecstasy 2025 - College Cultural Festival Website",
-      description: "Developed a fully responsive website for the college’s cultural festival.",
+      description: "Developed a fully responsive website for the college's cultural festival.",
       technologies: ['react', 'node', 'database'] as const,
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80",
+      image: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=2532&q=80",
       link: "https://cit.ac.in/ecstasy2025/index.html",
     },
     {
       title: "Gym Management System",
       description: "Developed a system to manage gym memberships, schedules, and payments.",
       technologies: ['react', 'node', 'cloud'] as const,
-      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80",
+      image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=2574&q=80",
       link: "#",
     },
     {
       title: "Electricity Bill Management System",
       description: "Created a system for bill generation, payments, and user account management.",
       technologies: ['typescript', 'react', 'database'] as const,
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80",
+      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80",
       link: "#",
     },
     {
       title: "MiTM Mitigation in SDN for Enhanced Network Security",
       description: "Implemented security solutions to detect and prevent Man-in-the-Middle (MiTM) attacks in SDN environments.",
       technologies: ['typescript', 'react', 'cloud'] as const,
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80",
+      image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80",
       link: "#",
     },
     {
       title: "Security Automation Using Open Source Tools",
       description: "Developed an automated security response platform integrating AI with open-source security tools.",
       technologies: ['typescript', 'react', 'cloud'] as const,
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80",
       link: "#",
     },
 
