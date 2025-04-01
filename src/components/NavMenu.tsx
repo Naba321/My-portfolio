@@ -36,7 +36,7 @@ const NavMenu: React.FC = () => {
           <button
             key={item}
             onClick={() => scrollToSection(item)}
-            className="pixel-btn pixel-corners uppercase hover:bg-pixel-green hover:text-black transition-colors"
+            className="bg-muted text-foreground font-pixel uppercase px-5 py-3 pixel-corners transition-all duration-300 hover:bg-pixel-green hover:text-black hover:scale-105"
           >
             {item}
           </button>
@@ -51,7 +51,7 @@ const NavMenu: React.FC = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="block w-full text-left px-4 py-2 hover:bg-pixel-green hover:text-black transition-colors font-pixel text-sm uppercase"
+                className="block w-full text-left px-4 py-2 transition-all duration-300 font-pixel text-sm uppercase text-foreground hover:bg-pixel-green hover:text-black hover:pl-6"
               >
                 {'> '}{item}
               </button>
