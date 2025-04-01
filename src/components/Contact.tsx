@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                   <div>
                     <div className="font-pixel text-sm mb-1">Location</div>
                     <div className="font-mono text-sm text-muted-foreground">
-                      Tamulpur, Assam, IND
+                      Tamulpur, Assam, India
                     </div>
                   </div>
                 </div>
@@ -91,13 +91,13 @@ const Contact: React.FC = () => {
                     >
                       <Linkedin className="h-5 w-5" />
                     </a>
-                    <a 
+                    {/* <a 
                       href="#" 
                       className="bg-secondary p-2 pixel-corners hover:bg-primary hover:text-primary-foreground transition-colors"
                       aria-label="Twitter Profile"
                     >
                       <Twitter className="h-5 w-5" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

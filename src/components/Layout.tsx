@@ -87,7 +87,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer className="py-6 px-4 border-t border-border mt-16 text-center">
         <div className="container">
           <p className="font-mono text-xs text-muted-foreground">
-            © {new Date().getFullYear()} • Built with pixel perfection
+            © {new Date().getFullYear()} • Nabajit Das. All Rights Reserved.
           </p>
         </div>
       </footer>
